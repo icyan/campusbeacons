@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">hello-gimbal-android</string>
+    <string name="app_name">Campus Beacons</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_rozh">Rozanski Hall</string>
+    <string name="title_activity_sci">Summerlee Science Complex</string>
+    <string name="title_activity_thorn">Thornborough</string>
+    <string name="title_activity_uc">University Center</string>
 </resources>

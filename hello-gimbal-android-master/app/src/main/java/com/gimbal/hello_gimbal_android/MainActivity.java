@@ -9,7 +9,9 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.AdapterView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -22,9 +24,6 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.d("msg","Requested user enable Location. Try starting the scan again.");
-        requestLocationPermission();
-
         startService(new Intent(this, AppService.class));
 
 
@@ -32,6 +31,32 @@ public class MainActivity extends ActionBarActivity {
 
         ListView listView = (ListView) findViewById(R.id.listview);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Object item = adapter.getItem(position);
+                switch (item.toString()) {
+                    case "Rozanski Hall":
+                        Intent rozh = new Intent(MainActivity.this, RozhActivity.class);
+                        startActivity(rozh);
+                        break;
+                    case "Thornborough":
+                        Intent thorn = new Intent(MainActivity.this, ThornActivity.class);
+                        startActivity(thorn);
+                        break;
+                    case "University Center":
+                        Intent uc = new Intent(MainActivity.this, UcActivity.class);
+                        startActivity(uc);
+                        break;
+                    case "Summerlee Science Complex":
+                        Intent sci = new Intent(MainActivity.this, SciActivity.class);
+                        startActivity(sci);
+                        break;
+                }
+                Log.d("item", item.toString());
+            }
+        });
     }
     @Override
     protected void onNewIntent(Intent intent) {
@@ -42,15 +67,6 @@ public class MainActivity extends ActionBarActivity {
     protected void onResume() {
         super.onResume();
         adapter.setEvents(GimbalDAO.getEvents(getApplicationContext()));
-    }
-
-    private boolean hasLocationPermissions() {
-        return checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
-    }
-
-    private void requestLocationPermission() {
-        requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_FINE_LOCATION);
-        Log.d("msg","Requested user enable Location. Try starting the scan again.");
     }
 
     @Override

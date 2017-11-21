@@ -69,12 +69,14 @@ public class AppService extends Service {
 
             @Override
             public void onVisitStart(Visit visit) {
-                addEvent(String.format("Start Visit for %s", visit.getPlace().getName()));
+                addEvent(String.format("%s", visit.getPlace().getName()));
             }
 
             @Override
             public void onVisitEnd(Visit visit) {
-                addEvent(String.format("End Visit for %s", visit.getPlace().getName()));
+                //addEvent(String.format("End Visit for %s", visit.getPlace().getName()));
+                events.remove(visit.getPlace().getName());
+                GimbalDAO.setEvents(getApplicationContext(), events);
             }
         };
         PlaceManager.getInstance().addListener(placeEventListener);

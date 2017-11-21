@@ -113,10 +113,12 @@
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
-    <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
+    <orderEntry type="jdk" jdkName="Android API 21 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="com.android.support:appcompat-v7-22.0.0" level="project" />
     <orderEntry type="library" name="com.gimbal.android.v2:gimbal-sdk-2.72" level="project" />
+    <orderEntry type="library" name="com.android.support.constraint:constraint-layout-solver:1.0.2@jar" level="project" />
+    <orderEntry type="library" name="com.android.support.constraint:constraint-layout-1.0.2" level="project" />
     <orderEntry type="library" name="com.android.support:support-v4-22.0.0" level="project" />
     <orderEntry type="library" name="com.android.support:support-annotations:22.0.0@jar" level="project" />
     <orderEntry type="library" name="com.gimbal.android.v2:gimbal-slf4j-impl-2.72" level="project" />
