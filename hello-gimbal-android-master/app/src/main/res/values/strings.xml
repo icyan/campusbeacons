@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Campus Beacons</string>
+    <string name="app_name">UoG Campus Explorer</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -7,4 +7,17 @@
     <string name="title_activity_sci">Summerlee Science Complex</string>
     <string name="title_activity_thorn">Thornborough</string>
     <string name="title_activity_uc">University Center</string>
+    <string name="campus_image">Image of campus</string>
+    <string name="buildings_near_me">BUILDINGS NEAR ME:</string>
+    <string name="floor">FLOOR PLAN</string>
+    <string name="about_thorn">The Albert A. Thornborough building houses the School of Engineering.
+        \nACCESS: Automatic doors at West, North, and East entrances
+        \nELEVATORS: Access to ground, first, and second floors
+        \nWASHROOMS: Unisex washrooms on ground and second floor; Accessible stalls in men's and women's washrooms
+        \nPARKING: Parking lot P8 off of South Ring Road
+    </string>
+    <string name="about_roz"></string>
+    <string name="about_sci"></string>
+    <string name="about_uc"></string>
+
 </resources>
