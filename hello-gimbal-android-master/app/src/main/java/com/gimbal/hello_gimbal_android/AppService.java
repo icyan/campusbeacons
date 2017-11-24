@@ -40,14 +40,14 @@ public class AppService extends Service {
         communicationListener = new CommunicationListener() {
             @Override
             public Notification.Builder prepareCommunicationForDisplay(Communication communication, Visit visit, int notificationId) {
-                addEvent(String.format( "Communication Delivered : %s", communication.getTitle()));
+                //addEvent(String.format( "Communication Delivered : %s", communication.getTitle()));
                 // If you want a custom notification create and return it here
                 return null;
             }
 
             @Override
             public Notification.Builder prepareCommunicationForDisplay(Communication communication, Push push, int notificationId) {
-                addEvent(String.format( "Push Communication Delivered : %s", communication.getTitle()));
+                //addEvent(String.format( "Push Communication Delivered : %s", communication.getTitle()));
                 // If you want a custom notification create and return it here
                 return null;
             }
@@ -56,7 +56,7 @@ public class AppService extends Service {
             public void onNotificationClicked(List<Communication> communications) {
                 for (Communication communication : communications) {
                     if(communication != null) {
-                        addEvent("Communication Clicked");
+                        //addEvent("Communication Clicked");
                     }
                 }
             }
@@ -70,6 +70,7 @@ public class AppService extends Service {
             @Override
             public void onVisitStart(Visit visit) {
                 addEvent(String.format("%s", visit.getPlace().getName()));
+
             }
 
             @Override

@@ -16,8 +16,8 @@
         \nWASHROOMS: Unisex washrooms on ground and second floor; Accessible stalls in men's and women's washrooms
         \nPARKING: Parking lot P8 off of South Ring Road
     </string>
-    <string name="about_roz"></string>
-    <string name="about_sci"></string>
-    <string name="about_uc"></string>
+    <string name="about_roz">Named in honour of Mordechai Rozanski, the University\'s longest serving president, Rozanski Hall houses lecture theatres ranging in size from 30 to 600 seats and modern classrooms with computer-based multimedia equipment allowing for the delivery of technology-assisted courses. The facility also recognizes the historical importance and architectural heritage of surrounding buildings, and includes materials salvaged from the beef barn that once stood on the site.</string>
+    <string name="about_sci">Houses the College of Biological Science and College of Physical and Engineering Science. This space has 200 seats for students to study in a moderately loud group study environment. There are outlets on the floor throughout the space as well as on the walls. There is a Second Cup coffee shop which is open until 6pm on weekdays, as well as vending machines. </string>
+    <string name="about_uc">The University Centre (UC) mission is to provide a central focus point or central meeting place for all members of the University community – students, faculty, staff, alumni and guests. As the “Front Door” and “Main Street” of the campus, the UC strives to provide the resources necessary for social and cultural interaction among and within the different sectors of the University community.</string>
 
 </resources>
